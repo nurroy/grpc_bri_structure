@@ -1,0 +1,164 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "users.proto",
+    "version": "version not set"
+  },
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/api/customer/v1.0/users": {
+      "post": {
+        "operationId": "Post",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/usersInsertResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/usersUsers"
+            }
+          }
+        ],
+        "tags": [
+          "TypesService"
+        ]
+      }
+    },
+    "/api/customer/v1.0/users/{uId}": {
+      "get": {
+        "operationId": "Get",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/usersRetrieveResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "uId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "TypesService"
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "protobufAny": {
+      "type": "object",
+      "properties": {
+        "type_url": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string",
+          "format": "byte"
+        }
+      }
+    },
+    "runtimeError": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "string"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "message": {
+          "type": "string"
+        },
+        "details": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/protobufAny"
+          }
+        }
+      }
+    },
+    "usersInsertResponse": {
+      "type": "object",
+      "properties": {
+        "success": {
+          "type": "boolean",
+          "format": "boolean"
+        },
+        "respCode": {
+          "type": "string"
+        },
+        "respDesc": {
+          "type": "string"
+        }
+      },
+      "description": "RetrieveResponse is the response for types service."
+    },
+    "usersRetrieveResponse": {
+      "type": "object",
+      "properties": {
+        "success": {
+          "type": "boolean",
+          "format": "boolean"
+        },
+        "respCode": {
+          "type": "string"
+        },
+        "respDesc": {
+          "type": "string"
+        },
+        "user": {
+          "$ref": "#/definitions/usersUsers"
+        }
+      },
+      "description": "RetrieveResponse is the response for types service."
+    },
+    "usersUsers": {
+      "type": "object",
+      "properties": {
+        "uId": {
+          "type": "string"
+        },
+        "uName": {
+          "type": "string"
+        },
+        "uAddress": {
+          "type": "string"
+        },
+        "age": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

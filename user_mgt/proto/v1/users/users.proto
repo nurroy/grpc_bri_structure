@@ -1,0 +1,50 @@
+syntax = "proto3";
+
+package api.customer.bri.v1.users;
+
+
+import "lib/google/api/annotations.proto";
+
+// RetrieveRequest is the request for types service.
+message RetrieveRequest {
+    string uId       = 1;
+
+}
+
+message Users {
+    string uId = 1;
+    string uName =2;
+    string uAddress =3;
+    string age =4;
+}
+
+// RetrieveResponse is the response for types service.
+message RetrieveResponse {
+    bool success        = 1;
+    string respCode     = 2;
+    string respDesc     = 3;
+    Users user =4;
+}
+
+// RetrieveResponse is the response for types service.
+message InsertResponse {
+    bool success        = 1;
+    string respCode     = 2;
+    string respDesc     = 3;
+}
+
+
+// productsServices provides utility methods for the API.
+service TypesService {
+    rpc Get(RetrieveRequest) returns (RetrieveResponse) {
+        option (google.api.http) = {
+            get  : "/api/customer/v1.0/users/{uId}"
+        };
+    }
+    rpc Post(Users) returns (InsertResponse){
+        option (google.api.http) = {
+            post : "/api/customer/v1.0/users"
+            body : "*"
+        };
+    }
+}

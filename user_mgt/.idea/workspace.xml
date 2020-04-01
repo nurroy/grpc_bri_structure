@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7710ed1e-3d38-4a9a-aa69-8e693ed6d258" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="GoDepProject">
+    <integration-enabled>true</integration-enabled>
+    <exec-path>$PROJECT_DIR$/../../bin/dep</exec-path>
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1ZWLTu9xqjsN5bKhzehcbqYVF9m" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.tried.to.enable.integration.dep.integrator" value="true" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bridce-customers-37c762431223" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/env" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/pkg/utils" />
+      <recent name="$PROJECT_DIR$/proto" />
+      <recent name="$PROJECT_DIR$/proto/lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/vendor" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="gen.sh" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/proto/gen.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/proto" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Shell Script.gen.sh" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="555" y="214" width="800" height="677" key="#Dep" timestamp="1585232960981">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="555" y="214" width="800" height="677" key="#Dep/0.27.1920.1053@0.27.1920.1053" timestamp="1585232960981" />
+    <state x="668" y="357" width="574" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585535401374">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="668" y="357" width="574" height="390" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1585535401374" />
+    <state x="693" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585535433170">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="693" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1585535433170" />
+    <state x="743" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1585538759742">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="743" y="310" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1585538759742" />
+    <state x="449" y="187" key="SettingsEditor" timestamp="1585496342776">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="449" y="187" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1585496342776" />
+  </component>
+</project>
